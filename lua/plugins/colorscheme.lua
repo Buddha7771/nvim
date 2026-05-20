@@ -31,6 +31,18 @@ return {
       vim.api.nvim_set_hl(0, "SnacksPickerGitStatusModified", { fg = c.vscGitModified })
       vim.api.nvim_set_hl(0, "SnacksPickerGitStatusDeleted", { fg = c.vscGitDeleted })
       vim.api.nvim_set_hl(0, "SnacksPickerGitStatusUntracked", { fg = c.vscGitUntracked })
+
+      -- CursorLine: 배경을 아주 연한 흰색으로 (투명 배경에서 살짝만 보이게)
+      vim.api.nvim_set_hl(0, "CursorLine", { bg = "NONE" })
+      vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#FFFFFF", bold = true })
+
+      -- 윈도우 구분선
+      vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#444444", bg = "NONE" })
+
+      -- 혹시 탭라인/버퍼라인도 문제라면
+      vim.api.nvim_set_hl(0, "TabLineFill", { bg = "NONE" })
+      vim.api.nvim_set_hl(0, "TabLine", { bg = "NONE", fg = "#888888" })
+      vim.api.nvim_set_hl(0, "TabLineSel", { bg = "NONE", fg = "#FFFFFF", bold = true })
     end,
   },
 }
